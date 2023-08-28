@@ -5,7 +5,7 @@ function myFunction(){
   const subject =document.getElementById("subject").value
   const name =document.getElementById("name").value
   const mail =document.getElementById("mail").value
-  
+
   alert(`Thanks for you response ${name} 
   Your reply would be sent to ${mail}`)
 }
