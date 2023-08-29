@@ -117,7 +117,7 @@ label{
   display: none;
 }
 
-
+/* Phone Screens */
 @media (max-width:760px) {
   .laptop-nav{
     display: none;
@@ -180,4 +180,25 @@ label{
   nav > section >button{
     margin-left: .5rem;
   }
+
+  nav button{
+    cursor: pointer;
+    margin-top: 2px;
+    padding: .5rem 1rem;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #9a739a;
+  }
+
+  .contacts{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    padding: 2rem;
+  }
+
+  .phone{
+    padding: 1rem 0rem;
+  }
+  
 }

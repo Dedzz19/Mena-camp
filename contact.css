@@ -35,15 +35,6 @@ input::placeholder{
   height: 5rem;
 }
 
-button{
-  cursor: pointer;
-  margin-top: 2px;
-  padding: .5rem 1rem;
-  outline: none;
-  border: none;
-  color: white;
-  background-color: #9a739a;
-}
 
 footer{
   display: grid;
@@ -84,3 +75,32 @@ footer button{
   margin: .8rem 0rem;
 }
 
+@media (max-width:760px) {
+  form{
+    padding: 0 1.5rem;
+}
+ form > div{
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: auto;
+  gap: 1rem;
+  padding-right: 0rem;
+ }
+
+ button{
+  cursor: pointer;
+  margin-top: 2px;
+  padding: .5rem 1rem;
+  outline: none;
+  border: none;
+  color: white;
+  background-color: #9a739a;
+}
+footer{
+  display: grid;
+  margin:2rem 0rem;
+  gap:1px;
+  grid-template-columns: 100%;
+  padding: 0;
+}
+}
