@@ -11,3 +11,15 @@ function myFunction(){
 }
 
 button.addEventListener("click", myFunction)
+
+
+const menu=document.getElementById("menu")
+const toggles=document.getElementById("menu-items")
+
+
+function toggler(){
+  toggles.classList.toggle('d-none')
+}
+
+
+menu.addEventListener('click',toggler)

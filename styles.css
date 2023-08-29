@@ -115,6 +115,7 @@ label{
 
 .phone-nav{
   display: none;
+  transition: all .5s ease-in-out;
 }
 
 /* Phone Screens */
@@ -129,11 +130,11 @@ label{
   .phone-nav > div{
     display: grid;
     align-items: center;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 85% 15%;
     padding: .5rem;
   }
   	
-  .phone-nav > div> i{
+  .phone-nav > div> span{
     font-size: x-large;
     border: 1px solid grey;
     display: flex;
@@ -141,7 +142,7 @@ label{
     border-radius: 3px;
   }
 
-  .phone-nav > i:visited{
+  #menu:active {
     border: 4px solid grey;
   }
 
