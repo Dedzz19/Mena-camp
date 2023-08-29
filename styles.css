@@ -24,12 +24,6 @@
   padding:1rem 2rem;
   color: white;
   font-size: larger;
-  /* background-image: linear-gradient(50deg,black 50%, red 50%);
-  background-size: 200% 200%;
-  background-position: right;
-  transition: all .5s ease-in-out;
-  animation: back infinite 5s;
-  background-image: url('./Rectangle\ 9.png'); */
 }
 
 
@@ -117,4 +111,73 @@ label{
 
 .brown{
   color: #9a8885 ;
+}
+
+.phone-nav{
+  display: none;
+}
+
+
+@media (max-width:760px) {
+  .laptop-nav{
+    display: none;
+  }
+  .phone-nav{
+    display: block;
+    padding: .5rem 0rem;
+  }
+  .phone-nav > div{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 90% 10%;
+    padding: .5rem;
+  }
+  	
+  .phone-nav > div> i{
+    font-size: x-large;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+  }
+
+  .phone-nav > i:visited{
+    border: 4px solid grey;
+  }
+
+  .logo{
+    color: #800080;
+    font-family: Karma;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  nav{
+    padding: 0;
+  }
+
+  .top-bar{
+    font-size: small;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .icons{
+    place-content: end;
+    padding-top: .3rem;
+  }
+
+  .nav-item{
+    cursor: pointer;
+    font-size: medium;
+    padding: .5rem;
+    font-weight: 700;
+  }
+  .active{
+    border-bottom: none;
+  }
+  nav > section >button{
+    margin-left: .5rem;
+  }
 }
