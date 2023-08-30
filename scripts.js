@@ -1,16 +1,10 @@
-const button=document.getElementById("submit_button")
-
-function myFunction(){
-  const message=document.getElementById("message").value
-  const subject =document.getElementById("subject").value
-  const name =document.getElementById("name").value
-  const mail =document.getElementById("mail").value
-
-  alert(`Thanks for you response ${name} 
-  Your reply would be sent to ${mail}`)
-}
-
-button.addEventListener("click", myFunction)
+// function myFunction(){
+//   const name =document.getElementById("name").value
+//   const mail =document.getElementById("mail").value
+//   console.log(mail)
+//     alert(`Thanks for you response ${name} 
+//     Your reply would be sent to ${mail}`)
+// }
 
 
 const menu=document.getElementById("menu")
@@ -22,4 +16,25 @@ function toggler(){
 }
 
 
+
+const button=document.getElementById("donate-button")
+
+function donateFunction(){
+  const section=document.getElementById("donate")
+  const bodyblur=document.getElementById("blur")
+  bodyblur.classList.add("blur")
+  section.classList.remove("d-none")
+}
+
+
+const close=document.getElementById("close_donate")
+function closeToogle(){
+  const section=document.getElementById("donate")
+  const bodyblur=document.getElementById("blur")
+  bodyblur.classList.remove("blur")
+  section.classList.add("d-none")
+}
+
+close.addEventListener("click",closeToogle)
 menu.addEventListener('click',toggler)
+button.addEventListener('click',donateFunction)

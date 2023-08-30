@@ -9,6 +9,7 @@ input {
   border: 1px solid grey;
 }
 
+
 form > div {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -74,10 +75,6 @@ footer button {
 }
 
 
-.d-none {
-  display: none;
-}
-
 .hero-section > img {
   position: relative;
 }
@@ -94,6 +91,16 @@ footer button {
   form {
     padding: 0 1.5rem;
   }
+
+  footer > section > div > input {
+    width: 100%;
+  }
+
+  footer > section {
+    background-image: url("https://images.unsplash.com/photo-1533035353720-f1c6a75cd8ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80");
+    padding: 1.5rem;
+  }
+
   
   .hero-text {
     font-size: large;
@@ -105,6 +112,14 @@ footer button {
     gap: 1rem;
     padding-right: 0rem;
   }
+  footer {
+    display: grid;
+    margin: 2rem 0rem;
+    gap: 1px;
+    grid-template-columns: 100%;
+    padding: 0;
+  }
+}
 
   button {
     cursor: pointer;
@@ -115,11 +130,3 @@ footer button {
     color: white;
     background-color: #9a739a;
   }
-  footer {
-    display: grid;
-    margin: 2rem 0rem;
-    gap: 1px;
-    grid-template-columns: 100%;
-    padding: 0;
-  }
-}
