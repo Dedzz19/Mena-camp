@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="contact.css">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="donate.css">
 </head>
 <body >
   <main id="blur" class="">
@@ -16,7 +17,7 @@
   
       <div class="icons">
         <i class="bi bi-facebook"></i>
-        <i class="bi bi-instagram"></i>
+        <a href="https://www.instagram.com/mena_foundation/"> <i class="bi bi-instagram"></i></a>
         <i class="bi bi-twitter"></i>
       </div>
     </section>
@@ -25,7 +26,7 @@
       <a class="logo" href="#">Mena Foundation</a>
       <div class="nav">
         <span class="nav-item "><a href="./index.html">Home</a></span>
-        <span class="nav-item"><a href="">About Us</a></span>
+        <span class="nav-item"><a href="./about.html">About Us</a></span>
         <span class="nav-item"><a href="">Projects</a></span>
         <span class="nav-item active"><a href="./contact.html">Contact</a></span>
         <button id="donate-button" type="button">Donate</button>
@@ -39,16 +40,16 @@
       <section class="">
         <div class="d-none" id="menu-items">
           <aside class="nav-item "><a href="./index.html">Home</a></aside>
-          <aside class="nav-item"><a href="">About Us</a></aside>
+          <aside class="nav-item"><a href="./about.html">About Us</a></aside>
           <aside class="nav-item"><a href="">Projects</a></aside>
           <aside class="nav-item active"><a href="./contact.html">Contact</a></aside>
-          <button id="donate-button" type="button">Donate</button>
+          <button id="donate-button" onclick="donateFunction()" type="button">Donate</button>
         </div>
       </section>
     </nav>
     <section class="hero-section">
       <h1 class="hero-text">Our Team:</h1>
-      <img width="100%" src="./Rectangle 9.png" />
+      <img width="100%" src="./images/Rectangle 9.png" />
     </section>
       <!-- Main body -->
       <section class="contacts">
@@ -120,8 +121,9 @@
       </footer>
   </main>
   <form class="container d-none" id="donate">
-    <!-- Logo and close -->
-    <div class="up-bar">
+   <section>
+     <!-- Logo and close -->
+     <div class="up-bar">
       <h4 class="logo">Mena Foundation</h4>
      <span class="pointer" id="close_donate"> <i class="bi bi-x-lg"></i></span>
     </div>
@@ -171,9 +173,10 @@
     </div>
     <!-- Donate Now -->
     <main class="donate-button">
-      <button  type="submit">Give $0.00</button>
+      <button disabled type="submit">Give $0.00</button>
       <i class="bi bi-bank"></i>
     </main>
+   </section>
   </form>
 </body>
 <script src="./scripts.js"></script>

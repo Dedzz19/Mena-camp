@@ -23,6 +23,7 @@ function donateFunction(){
   const section=document.getElementById("donate")
   const bodyblur=document.getElementById("blur")
   bodyblur.classList.add("blur")
+  bodyblur.classList.add("hidden")
   section.classList.remove("d-none")
 }
 
@@ -32,9 +33,15 @@ function closeToogle(){
   const section=document.getElementById("donate")
   const bodyblur=document.getElementById("blur")
   bodyblur.classList.remove("blur")
+  bodyblur.classList.remove("hidden")
   section.classList.add("d-none")
 }
 
 close.addEventListener("click",closeToogle)
 menu.addEventListener('click',toggler)
 button.addEventListener('click',donateFunction)
+
+
+close.addEventListener("touch",closeToogle)
+menu.addEventListener('touch',toggler)
+// button.addEventListener('touch',donateFunction)

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.hero > div{
+  position: absolute;
+  top: 30vh;
+  right: 30vw;
+  left: 30vw;
+}
+
+.hero p{
+  font-size: larger;
+  margin: .5rem 0;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero h3{
+  font-size: xxx-large;
+}
+
+.mission{
+  background:#9a739a ;
+  display: grid;
+  grid-template-columns: 35% 60% 5%;
+  margin-top: -3.6px;
+  color: white;
+  font-family: Karma;
+  font-weight: 700;
+}
+
+.mission-1{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.mission-2{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50% 50%;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+@media (max-width:768px) {
+  
+  .hero > div{
+    position: absolute;
+    top: 15vh;
+    right: 5vw;
+    left: 5vw;
+  }
+  
+  .hero p{
+    font-size: small;
+    margin: .5rem 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .hero h3{
+    font-size: larger;
+  }
+
+  .mission{
+    background:#9a739a ;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-top: -3.6px;
+    color: white;
+    font-family: Karma;
+    font-weight: 700;
+    gap: 2px;
+  }
+
+  .mission-1{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .mission-2{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+}
+
+@media (max-width:481px) {  
+  .hero > div{
+    position: absolute;
+    top: 3vh;
+    right: 5vw;
+    left: 5vw;
+  }
+  
+  .hero p{
+    font-size: small;
+    margin: .5rem 0;
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  .hero h3{
+    font-size: larger;
+  }
+
+
+}

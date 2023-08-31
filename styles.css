@@ -13,6 +13,7 @@
   cursor: pointer;
 }
 
+
 @keyframes back{
   0%{background-position: right;}
   50%{background-position: left;}
@@ -73,6 +74,7 @@ nav{
   cursor: pointer;
   font-size: 1.25rem;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .active{
@@ -215,157 +217,7 @@ label{
   filter:blur(3px) ;
 }
 
-
-.container{
-  background-color: white;
-  border: #f8f8f8;
-  position: fixed;
-  left: 30vw;
-  top: 10vh;
-  right: 30vw;
-  padding: 2rem;
-  z-index: 100;
-}
-
-input{
-  outline: none;
-}
-
-select{
-  outline: none;
-  width: 100%;
-  font-size: medium;
-  padding: 0.5rem;
-}
-
-option{
-  font-size: medium;
-}
-
-.up-bar{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 2rem 0rem .5rem 0rem;
-  border-bottom: 1px solid #aeaeae;
-}
-
-.up-bar > span{
-  font-size: x-large;
-  place-content: end;
-  font-weight: 700;
-}
-
-.logo{
-  font-size: 1.5rem;
-}
-.text{
-  margin: 1rem  0rem;
-  font-weight:700;
-  color: #2b2b2b;
-}
-
-.details{
-  display: grid;
-  align-items: end;
-  grid-template-columns: 60% 10% 30%;
-  gap: 2px;
-  padding: 1rem 0rem;
-}
-
-.money-input input{
-  border: none;
-  border-bottom: 1px solid black;
-  width: 95%;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #aeaeae;
-}
-
-
-.money-input input::placeholder{
-  color: dimgrey;
-}
-
-.money-input{
-  font-weight: 600;
-  font-size: 1.2rem;
-}
-
-.info{
-  display: grid;
-  grid-template-columns: 20% 20% 20% 25%;
-  gap: 4%;
-}
-
-.info> input{
-  width: 100%;
-  font-size: 16px;
-  padding-left: 3px;
-  height: 5vh;
-}
-.payment-type{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:1rem;
-  margin-top: 1rem;
-  padding: 2rem 0rem;
-  border-bottom: 1px #aeaeae solid;
-  border-top: 1px #aeaeae solid;
-
-}
-
-.payment-option{
-  display: flex;
-  place-content: center;
-  gap:3px;
-  padding: 1rem;
-  border: 1px solid darkgrey;
-  width: 100%;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.active-pay{
-  background-color: #2b2b2b;
-  color: white;
-}
-
-.card-details > input{
- border: none;
-}
-
-.card-details{
-  border: 1px solid #aeaeae;
-  padding: 1rem ;
-  width: 80%;
-  justify-content: space-between;
-  display: flex;
-  margin: 1rem auto;
-  border-radius: 5px;
-}
-
-.donate-button > button{
-  background-color: #343a40;
-  border: none;
-  outline: none;
-  width: 100%;
-  padding: 1rem 0rem;
-  border-radius: 5px;
-  color: white;
-  cursor: pointer;
-}
-
-.donate-button{
-  width: 86%;
-  color: white;
-  margin: auto;
-}
-
-.donate-button > i{
-  position: absolute;
-  left: 2rem;
-  left: 32rem;
-  bottom: 3rem;
+.hidden{
+  overflow: hidden;
+  height: 100vh;
 }
